@@ -1,0 +1,307 @@
+// color setting for website
+$primaryColor: #0e72b8;
+$secondaryColor: #0095d8;
+$tertiaryColor: #f4801e;
+$quadraColor: #eb008b;
+$backgroundColor: #f0efe6;
+$greyColor: #9b9b9b;
+$darkGrey: #222;
+$borderColor: #e5e5e5;
+$whiteColor: #fff;
+$blackColor: #000;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+a:hover {
+    color: $blackColor;
+    text-decoration: none;
+    text-transform: none;
+}
+a{
+    color: $whiteColor;
+}
+h2 {
+    font-family: 'David Libre', serif;
+    letter-spacing: 0.2rem;
+    padding: 10px;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color:$primaryColor;
+    font-weight: 500;
+  }
+  h3 {
+    font-family: 'David Libre', serif;
+    letter-spacing: 2.5px;
+    padding: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color:$primaryColor;
+    font-weight: 500;
+  }
+  h5 {
+    font-family: 'David Libre', serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+  p {
+    color: $darkGrey;
+    padding: 10px;
+    font-family: 'David Libre', serif;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .custom-btn {
+    border: 1px solid $primaryColor;
+    background-color: $primaryColor;
+    color:$whiteColor;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.8s all;
+    border-radius: 5px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.custom-btn:focus,
+.custom-btn:hover {
+    outline: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color:#5e87b1;
+    box-shadow: inset -186px -186px 0 -181p#5e87b1;
+    color:$darkGrey;
+}
+.card {
+    min-height: 350px;
+    margin: 10px;
+    opacity: 1;
+    border: 0;
+    border-radius: 5%;
+    box-shadow: 10px 13px 18px -2px #add8e6;
+}
+@media screen and (max-width: 768px) {
+    .card {
+        margin: 10px 0;
+        opacity: 1;
+    }
+    .card-img {
+        width: 100%;
+        min-height: 160px;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-bottom-style: none;
+        margin: 0;
+        background-color: #fff;
+    }
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+.banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    
+    min-height: 150px;
+    .logo {
+        display: flex;
+        
+        // @media screen and (max-width:768px ){
+        //     width: 15rem;
+        //     justify-content: center;
+        // }
+        img {
+            width: 25rem;
+            padding: 20px 0 20px 0;
+            @media screen and (max-width: 992px ){
+                width: 20rem;
+                justify-content: center;
+            }
+            @media screen and (max-width:578px ){
+                width: 20rem;
+            }
+        }
+    }
+    .contact{
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 0 20px 0;
+        .email,.address,.phone{
+            margin: 10px;
+            display: flex;
+            align-items: flex-start;
+                i {
+                    font-size: 15px;
+                    color: $primaryColor;
+                    padding: 6px;
+                    margin-right: 10px;
+                }
+                
+        }
+        @media screen and (max-width:992px ){
+            min-height : 131px;
+            br{
+                display: none;
+            }
+        }
+        @media screen and (max-width:768px ){
+            justify-content: center;
+        }
+    }
+
+}
+        a {
+            padding: 5px;
+            color: $primaryColor;
+            font-size: 15px;
+            
+        }
+
+.navbar{
+    background-color: $primaryColor;
+    // position: absolute;
+    // top: 120px;
+    // width: 80%;
+    text-align: right;
+    display: flex;
+    .navbar-nav{
+        width: 100%;
+        display: flex;
+        justify-content: center !important;    
+    }
+    .nav-item{
+        color: $whiteColor;
+        .nav-link{
+            padding: 10px;
+            color: $backgroundColor;
+            font-size: 20px;
+            font-family: 'David Libre', serif;
+            font-weight: 500;
+            text-align: left;
+        }
+    }
+    .navbar-toggler-icon{
+        color: $whiteColor;
+        border: 1px solid white;
+        padding: 3px;
+    } 
+    .menu-tag{
+        @media screen and (min-width:992px ){
+            display: none;
+            
+        }
+    }
+    
+
+}
+.hero{
+    opacity: 0.8;
+    .slider{
+        height: 65vh;
+        .hero-text{
+        width: 60%;
+            p{
+                color: $whiteColor;
+            }
+        }
+ }
+ .slick-next{
+    right: 50px;
+ }
+}
+.card-section-one{
+    .card-fixed{
+        height: 115px;
+        display: grid;
+        place-items: center;
+        .text{
+            width: 80%;
+            height: 80%;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            h2{
+                color: white;
+                text-shadow: 2px 2px 6px $darkGrey;
+                text-align: center;
+            }
+        }
+    }
+}
+.content-only{
+min-height: 450px;
+background-attachment: fixed;
+
+.text{
+    background: linear-gradient(90deg, rgba(238,238,238,0.7) 0%, rgba(238,238,238,0.7) 100%);
+    padding: 50px;
+    .text-content{
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+        p{
+            color: $darkGrey;
+            font-weight: 600;
+        }
+    }
+   
+}
+}
+.footer{
+    background-color: #eee;
+    i{
+        margin-right: 5px;
+    }
+}
+
+.inside-one {
+    background-color: $whiteColor;
+    padding: 50px 0;
+    .content-inside {
+      width: 100%;
+      height: 100%;
+    }
+    .image-inside {
+      width: 100%;
+  
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+    }
+    .btn-div {
+      display: flex;
+      justify-content: center;
+    }
+      li {
+        color: $darkGrey;
+        padding: 10px 20px;
+        letter-spacing: 0.5px;
+      }
+    }
+// end of inside page
